@@ -1,4 +1,4 @@
-%% $Id: cv-us.tex,v 1.2 2004/06/07 03:07:51 jrblevin Exp $
+%% $Id: cv-us.tex,v 1.3 2004/06/10 22:15:00 jrblevin Exp $
 %%----------------------------------------------------------------------------
 %% The layout of this resume is based on Michael Forman's CV template
 %% at http://www.Michael-Forman.com/vitae/.  I have modified his template
@@ -20,46 +20,24 @@
 \newboolean{ref}
 \setboolean{ref}{false}
 
-\documentclass[margin,line,11pt,draft]{res}
+\documentclass[margin,line,11pt,final]{res}
 %\documentclass[overlapped,line,11pt,draft]{res}
 %-----------------------------------------------------------------------------
 \usepackage[colorlinks,urlcolor=black]{hyperref}
 %-----------------------------------------------------------------------------
-%% \pdfoutput=1
-%% \relax
-
-%% %\pdfpagewidth=210mm		%-- A4
-%% %\pdfpageheight=297mm		%-- A4
-%% %\textwidth=145mm		%-- A4
-%% %\textheight=254mm		%-- A4
-
-%% \pdfpagewidth=8.5in		%-- Letter
-%% \pdfpageheight=11in		%-- Letter
-%% \textwidth=5.75in		%-- Letter
-%% \textheight=9.5in		%-- Letter
- 
-%% \oddsidemargin -15mm
-%% \evensidemargin -15mm
-
-%% \pdfcompresslevel=0             %-- 0 = none, 9 = best
-%% \pdfinfo{                       %-- Info dictionary of PDF output
-%%   /Author (Jason R. Blevins)
-%%   /Title (Curriculum Vitae)
-%%   /Subject (Curriculum Vitae)
-%%   /Keywords (Applied Mathematics Economics Computer Science Differential Equations TANH method hyperbolic tangent centroid decomposition updating singular value decomposition linear algebra microeconomics System Administration Linux Unix German)
-%%   /Creator (pdfLaTeX)
-%%   /Producer ($Id: cv-us.tex,v 1.2 2004/06/07 03:07:51 jrblevin Exp $)
-%% }
-%% \pdfcatalog{          %-- Catalog dictionary of PDF output.
-%%   %/PageMode
-%%   %/UseNone
-%%   %/UseOutlines
-%%   %/UseThumbs
-%%   %/FullScreen
-%%   /URI (http://jrblevin.freeshell.org/)
-%% } openaction goto page 1 {/Fit}
+%% % To enable extended pdf support, add pdftex and the following to the
+%% % hyperref \usepackage line in the [..] section:
+%%
+%% pdftitle={Curriculum Vitae},
+%% pdfauthor={Jason R. Blevins},
+%% pdfcreator={pdfLaTeX},
+%% pdfproducer={$Id: cv-us.tex,v 1.3 2004/06/10 22:15:00 jrblevin Exp $},
+%% pdfsubject={Curriculum Vitae},
+%% pdfkeywords={Applied Mathematics Economics Computer Science
+%%     Differential Equations TANH method hyperbolic tangent centroid
+%%     decomposition updating singular value decomposition linear algebra
+%%     microeconomics System Administration Linux Unix German}
 %-----------------------------------------------------------------------------
-%\font\attand=cmr7
 \def\Cplusplus{{\rm C\raise.5ex\hbox{\small ++}}}
 %-----------------------------------------------------------------------------
 \begin{document}
@@ -161,7 +139,10 @@ in- and out-of-house PC repair, sales, technical support, and database driven
 web site design. Supervisor: Cyrus Hurley.
 \end{position}
 
-%------------------------------------------------------------------------------
+%==============================================================================
+\newpage
+\opening
+%---------------------------------------------------------------------------
 
 \section{\sc Skills}
 \begin{itemize}
@@ -200,9 +181,10 @@ web site design. Supervisor: Cyrus Hurley.
 
 \section{\sc Submitted \\Papers}
 
-N. \ Orlowski, D. \ Schlorff, J. R. \ Blevins, D. \ Canas, M. \ T. \ Chu,
-and R.\ E.\ Funderlic, {\em The Effects of Ties on Convergence of the
-k-Modes Clustering Algorithm}.  % Submitted for publication on ?.
+N. \ Orlowski, D. \ Schlorff, J. \ Blevins, D. \ Canas, M. \ T. \ Chu,
+and R.\ E.\ Funderlic, {\em The Effects of Ties on Convergence in
+K-Modes Variants for Clustering Categorical Data}. June 7, 2004.
+% Submitted for publication on ?.
 
 %------------------------------------------------------------------------------
 
@@ -217,10 +199,10 @@ J. R.\ Blevins, {\em A Chronology of SVD Updating and LSI}, April 13, 2004.
 
 \section{\sc Scientific \\Software}
 
-J. R.\ Blevins, J. \ Heath, and W. \ Hereman,
-  \texttt{PDESolutionTester.m},  A Mathematica program for the symbolic
+J. R.\ Blevins, J. \ Heath, and W. \ Hereman.
+  \texttt{PDESolutionTester.m}.  A Mathematica program for the symbolic
   verification of exact solutions of nonlinear partial differential
-  equations.
+  equations. 2002.
 
 \section{\sc Presentations}
 
@@ -228,14 +210,14 @@ J. R.\ Blevins, J. \ Heath, and W. \ Hereman,
 %% % by year like this:
 %% \section{\sc \small \hspace{8mm}2003}
 
-J. \ R. \ Blevins, {\em Solving Nonlinear Wave Equations with
-Mathematica}, Undergraduate Research Presentations, North Carolina
-State University, Raleigh, NC, April 23, 2003.
+J. \ R. \ Blevins. {\em Solving Nonlinear Wave Equations with
+Mathematica}. Undergraduate Research Presentations, North Carolina
+State University, Raleigh, NC. April 23, 2003.
 
 \vspace{\fill}\ \newline
 {\tiny \rm $ $RCSfile: cv-us.tex,v $ $ }
-{\tiny \rm $ $Date: 2004/06/07 03:07:51 $ $ }
-{\tiny \rm $ $Revision: 1.2 $ $ }
+{\tiny \rm $ $Date: 2004/06/10 22:15:00 $ $ }
+{\tiny \rm $ $Revision: 1.3 $ $ }
 
 %------------------------------------------------------------------------------
 
