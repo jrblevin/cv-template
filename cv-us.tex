@@ -1,0 +1,401 @@
+%% $Id: cv-us.tex,v 1.1 2004/05/31 21:17:50 jrblevin Exp $
+%%----------------------------------------------------------------------------
+%% Filename:      cv-us.tex
+%% Version:       $Revision: 1.1 $
+%% Description:   CV for Jason R. Blevins
+%% Author:        Jason R. Blevins <jason.r.blevins@duke.edu>
+%% Created:       Mon May 31 14:13:45 2004
+%%----------------------------------------------------------------------------
+%% To Do:
+%%   * Add descriptions of Phi Beta Kappa and Phi Kappa Phi
+%%   * Update address and telephone number
+%%   * Add more details about positions
+%%----------------------------------------------------------------------------
+\RequirePackage{ifthen}
+\newcommand{\ite}{\ifthenelse}
+\newcommand{\bl}{\boolean}
+%-----------------------------------------------------------------------------
+\newboolean{ref}
+\setboolean{ref}{false}
+%-----------------------------------------------------------------------------
+% http://www.uwm.edu/Dept/CDC/resume-develop.htm
+% http://www.mnworkforcecenter.org/cjs/cjs_site/index.htm
+%
+% Tips:
+%   - Resumes are not literary, they are promotional. 
+%   - The rules of grammar are modified from formal writing. 
+%   - Complete sentences are not necessary. 
+%   - Avoid the use of "I", as the subject of the resume is assumed to 
+%     be the person named in the heading of the resume. 
+%   - Avoid long narratives and use lots of bullets and key phrases. 
+%   - Someone looking at the resume should be able to figure out the 
+%     content without reading the details. 
+%   - The resume should draw the reader's attention and create a 
+%     desire to know more. 
+%   - The goal is to win an interview. 
+%   - It is at the interview that the job is won. 
+%   - The resume is like a preview of coming attractions. 
+%   - You want to save the best for the presentation. 
+%   - Therefore, it is best if the resume creates questions in the 
+%     mind of the reader.
+%-----------------------------------------------------------------------------
+\documentclass[margin,line,11pt,draft]{res}
+%\documentclass[overlapped,line,11pt,draft]{res}
+%-----------------------------------------------------------------------------
+\usepackage[colorlinks,urlcolor=black]{hyperref}
+%-----------------------------------------------------------------------------
+%% \pdfoutput=1
+%% \relax
+
+%% %\pdfpagewidth=210mm		%-- A4
+%% %\pdfpageheight=297mm		%-- A4
+%% %\textwidth=145mm		%-- A4
+%% %\textheight=254mm		%-- A4
+
+%% \pdfpagewidth=8.5in		%-- Letter
+%% \pdfpageheight=11in		%-- Letter
+%% \textwidth=5.75in		%-- Letter
+%% \textheight=9.5in		%-- Letter
+ 
+%% \oddsidemargin -15mm
+%% \evensidemargin -15mm
+
+%% \pdfcompresslevel=0             %-- 0 = none, 9 = best
+%% \pdfinfo{                       %-- Info dictionary of PDF output
+%%   /Author (Jason R. Blevins)
+%%   /Title (Curriculum Vitae)
+%%   /Subject (Curriculum Vitae)
+%%   /Keywords (Applied Mathematics Economics Computer Science Differential Equations TANH method hyperbolic tangent centroid decomposition updating singular value decomposition linear algebra microeconomics System Administration Linux Unix German)
+%%   /Creator (pdfLaTeX)
+%%   /Producer ($Id: cv-us.tex,v 1.1 2004/05/31 21:17:50 jrblevin Exp $)
+%% }
+%% \pdfcatalog{          %-- Catalog dictionary of PDF output.
+%%   %/PageMode
+%%   %/UseNone
+%%   %/UseOutlines
+%%   %/UseThumbs
+%%   %/FullScreen
+%%   /URI (http://jrblevin.freeshell.org/)
+%% } openaction goto page 1 {/Fit}
+%-----------------------------------------------------------------------------
+%\font\attand=cmr7
+\def\Cplusplus{{\rm C\raise.5ex\hbox{\small ++}}}
+%-----------------------------------------------------------------------------
+\begin{document}
+
+\name{{\Large \bf Jason R. Blevins}}
+
+%\address{
+%}
+%\address{
+%}
+
+\begin{resume}
+
+\hspace{-0cm}
+\begin{minipage}{1.25\linewidth}
+  \begin{minipage}{0.49\linewidth}
+    22 Shepherd St Apt C \\
+    Raleigh NC 27607 \\
+    Phone: (919) 832-2695 \\
+%    Cell: (919) 624-4756 \\
+%    {\tt jrblevin@sdf.lonestar.org} \\
+%    {\tt jrb11@duke.edu} \\
+    {\tt jason.r.blevins@duke.edu} \\
+%    {\tt http://jrblevin.freeshell.org/cv/} \\
+    {\tt \verb+http://www.duke.edu/~jrb11/cv/+} \\
+  \end{minipage}
+  \hspace{\fill}
+  \begin{minipage}{0.49\linewidth}
+    Department of Economics\\
+    Box 90097 \\
+    Duke University \\
+    Durham NC 27008-0097 \\
+    FAX: (919) 684-8974  \\
+  \end{minipage}
+\end{minipage}
+%---------------------------------------------------------------------------
+%% Examples:
+%---------------------------------------------------------------------------
+%% \section{\sc Objective}
+%% %% Consulting position utilizing abilities to:
+%% Obtain position utilizing abilities to:
+%% \vspace{2mm}
+%% \begin{itemize}
+%%   \item Collaborate and advise on research projects in areas of expertise;
+%%   \item Actively seek funding through proposal writing and presentation;
+%%   \item Provide support as a technical team lead and project manager;
+%%   \item Employ critical thinking to develop innovative solutions; and
+%%   \item Use knowledge of cultures and languages to facilitate 
+%%         collaboration in international business settings.
+%% % \item Continue the ongoing pursuit of knowledge.
+%% \end{itemize}
+%---------------------------------------------------------------------------
+%% \section{\sc Summary}
+%% \begin{itemize}
+%%  \item[-] Ability to work independently, within a team, and supervise others
+%%  \item[-] Conceived, designed, and fabricated complex systems both
+%%           individually and as a team.
+%% \end{itemize}
+%---------------------------------------------------------------------------
+%% $\cdots$
+%% Relevant Course work:
+%% \vspace{2mm}
+%% \begin{itemize}
+%% \item{-} Design, fabrication and measurements of hybrid microwave 
+%%   circuits waveguides and transmission lines.
+%% \item{-} CAD antenna design.
+%% \item{-} Solid-state micro-fabrication laboratory.
+%% \item{-} Digital design.
+%% \end{itemize}
+%---------------------------------------------------------------------------
+%% %% Examples of Ph.D., M.S., and B.S. degrees
+%%
+%% \section{\sc Education}
+%%
+%% Ph.D., Electrical Engineering, May 2001; GPA: 4.0  \newline
+%% ``Active-Antenna Arrays for Power Combining and Communications'' \newline 
+%% Advisor: Dr.\ Zoya Popovi\'{c} \newline
+%% University of Colorado, Boulder, CO 
+%%
+%% M.S., Electrical Engineering, Spring 1998; GPA: 3.93 \newline
+%% Advisor: Dr.\ Zoya Popovi\'{c} \newline
+%% University of Colorado, Boulder, CO
+%%
+%% B.S., Electrical Engineering, Fall 1995; GPA: 3.75 \newline
+%% University of Colorado, Boulder, CO
+%---------------------------------------------------------------------------
+%% %% An example of using sections to describe various phases in a
+%% %% job at the same employer.  This is customized for the margin
+%% %% section heading option, rather than the overlapped style.
+%%
+%% \title{\em Senior Member of the Technical Staff, 
+%%            Telemetry and Instrumentation}
+%% \employer{\bf Sandia National Laboratories\\Albuquerque, NM}
+%% \dates{\bf April 2001 -- Present}
+%% \location{}
+%% %-- \section comes twixt \location{} & \begin{position}
+%% \section{\sc Research and\\Experience}
+%% \begin{position}
+%% \vspace{-1cm}
+%%
+%% \section{\sc \small \hspace{8mm}Oct 2001 \\\hspace{8mm}Present}
+%% [Job description for this date range....]
+%%
+%% \section{\sc \small \hspace{8mm}Apr 2001 \\\hspace{8mm}Oct 2001}
+%% [Job description for this date range....]
+%%
+%% \end{position}
+%---------------------------------------------------------------------------
+%% %% Other possible sections:
+%% \section{\sc Special Skills}
+%% \section{\sc Patents}
+%% \section{\sc Journal Publications}
+%% \section{\sc Refereed Conference Proceedings}
+%% \section{\sc Conference Presentations}
+%------------------------------------------------------------------------------
+\begin{format}
+\title{l}\employer{r}\\
+\location{l}\dates{r}\\
+\body\\
+\end{format}
+%---------------------------------------------------------------------------
+\section{\sc Education}
+B.S., Applied Mathematics, Spring 2004; GPA: 3.99, Summa Cum Laude \newline
+North Carolina State University, Raleigh, NC
+
+Study Abroad, \href{http://www.stolaf.edu/depts/math/budapest/}
+{Budapest Semesters in Mathematics}, Fall 2002 \newline
+Technical University of Budapest, Hungary
+%---------------------------------------------------------------------------
+\section{\sc Research and \\Experience}
+
+\title{\em Research Assistant \\ Department of Mathematics}
+\employer{\bf N.C. State University \\ Raleigh, NC}
+\location{}
+\dates{\bf 2003 -- Present}
+\begin{position}
+Investigation of data mining and clustering methods and their
+applications. Updating methods for the Singular Value and Centroid
+Decompositions. Under the supervision of Professor M. T. \ Chu and
+Professor R. E. \ Funderlic.
+\end{position}
+
+\title{\em Research Assistant \\ Mathematical and Computer Sciences}
+\employer{\bf Colorado School of Mines \\ Golden, CO}
+\location{}
+\dates{\bf Summer 2002}
+\begin{position}
+Development of Mathematica software to compute exact hyperbolic and
+elliptic solutions to systems of nonlinear partial differential
+equations. Supported an undergraduate research grant from the National
+Science Foundation.  Under the supervision of Professor W. \ Hereman.
+\end{position}
+
+\title{\em Mathematics Tutor \\ Academic Support for Student Athletes}
+\employer{\bf N.C. State University \\ Raleigh, NC}
+\location{}
+\dates{\bf Summer 2001}
+\begin{position}
+Individually tutored five student athletes Algebra II, Calculus I, II,
+and III. Supervisor: Jody Moylon.
+\end{position}
+
+\title{\em Computer Technician \\ Network and System Administration}
+\employer{\bf Hurley Technology Resources \\ Jefferson, NC}
+\location{}
+\dates{\bf 1999--2000}
+\begin{position}
+Windows and UNIX networking for businesses and internet service providers,
+in- and out-of-house PC repair, sales, technical support, and database driven
+web site design. Supervisor: Cyrus Hurley.
+\end{position}
+
+%===========================================================================
+%\newpage
+%\opening
+
+%------------------------------------------------------------------------------
+\section{\sc Skills}
+\begin{itemize}
+\item Languages: intermediate German; basic familiarity with Hungarian
+\item Programming Languages: Matlab, Mathematica, Maple, Java, C,
+  \Cplusplus, HTML, PHP, Linux, Unix
+\item Expert knowledge of the Unix operating system and related
+  applications.
+\item Advanced knowledge of the professional typesetting package \LaTeX
+\item Strong technical writing and grammar skills
+\end{itemize}
+
+\section{\sc Awards}
+\begin{itemize}
+\item N.C. State University Undergraduate Research Award, Spring 2004
+\item National Science Foundation (NSF) Research Experience for
+  Undergraduates (REU), Summer 2002
+\item NCSU Chancellor's Leadership Award %(Scholarship)
+\item NCSU Engineering Dean's Merit Award %(Scholarship)
+\end{itemize}
+
+\section{\sc Honors}
+\begin{itemize}
+\item \href{http://www.pbk.org/}{Phi Beta Kappa}
+\item \href{http://www.cba.ua.edu/~ode/}
+  {Omicron Delta Epsilon} -- Economics Honor Society
+\item \href{http://www.pme-math.org/}
+  {Pi Mu Epsilon} -- Honorary National Mathematics Society
+\item \href{http://www.phikappaphi.org/}{Phi Kappa Phi}
+\item Vice President, NCSU Society of Undergraduate Mathematics, 2001--2003
+\item \href{www.goldenkey.org}{Golden Key International Honour Society}
+\item Dean's List: 2000 -- 2004
+\end{itemize}
+
+
+%===========================================================================
+
+%\newpage
+%\opening
+
+\section{\sc Submitted \\Papers}
+
+N. \ Orlowski, D. \ Schlorff, J. R. \ Blevins, D. \ Canas, M. \ T. \ Chu,
+and R.\ E.\ Funderlic, {\em The Effects of Ties on Convergence of the
+k-Modes Clustering Algorithm}.  % Submitted for publication on ?.
+
+%------------------------------------------------------------------------------
+\section{\sc Working \\Papers}
+
+J. R.\ Blevins and M. T. \ Chu, {\em Updating the Centroid
+Decomposition with Applications in LSI}, 2003--2004.
+
+J. R.\ Blevins, {\em A Chronology of SVD Updating and LSI}, April 13, 2004.
+
+%------------------------------------------------------------------------------
+\section{\sc Scientific \\Software}
+
+J. R.\ Blevins, J. \ Heath, and W. \ Hereman,
+  \texttt{PDESolutionTester.m},  A Mathematica program for the symbolic
+  verification of exact solutions of nonlinear partial differential
+  equations.
+
+\section{\sc Presentations}
+
+%% % Later, when the list gets longer, use subsections by year like this:
+%% \section{\sc \small \hspace{8mm}2003}
+
+J. \ R. \ Blevins, {\em Solving Nonlinear Wave Equations with Mathematica},
+Undergraduate Research Presentations, North Carolina State University,
+Raleigh, NC, April 23, 2003.
+
+
+\vspace{\fill}\ \newline
+{\tiny \rm $ $RCSfile: cv-us.tex,v $ $ }
+{\tiny \rm $ $Date: 2004/05/31 21:17:50 $ $ }
+{\tiny \rm $ $Revision: 1.1 $ $ }
+%------------------------------------------------------------------------------
+\ite{\bl{ref}}{        
+
+\newpage
+\opening
+\section{\sc References}
+
+%% Sample reference sheet:
+%% http://www.uwm.edu/Dept/CDC/resrefer.htm 
+%% References DO NOT belong on the resume. 
+%% They should be listed on a separate sheet. 
+%% Send the references with the resume only when 
+%% specifically requested by the employer. 
+%% There is no need to state "References available upon request." 
+%% It is assumed that you will provide them. 
+
+
+%
+Reference A. Person \newline
+Sandia National Laboratories \newline
+000-000-0000 \newline
+{\tt devnull@Sandia.GOV} \newline
+Impressive Title for Person
+
+
+
+%
+Reference A. Person \newline
+Sandia National Laboratories \newline
+000-000-0000 \newline
+{\tt devnull@Sandia.GOV} \newline
+Impressive Title for Person
+
+
+
+%
+Reference A. Person \newline
+Sandia National Laboratories \newline
+000-000-0000 \newline
+{\tt devnull@Sandia.GOV} \newline
+Impressive Title for Person
+
+
+
+%
+Reference A. Person \newline
+Sandia National Laboratories \newline
+000-000-0000 \newline
+{\tt devnull@Sandia.GOV} \newline
+Impressive Title for Person
+
+
+
+%
+Reference A. Person \newline
+Sandia National Laboratories \newline
+000-000-0000 \newline
+{\tt devnull@Sandia.GOV} \newline
+Impressive Title for Person
+
+
+
+}
+
+
+\end{resume}
+
+\end{document}
