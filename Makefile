@@ -1,4 +1,4 @@
-# $Id: Makefile,v 1.1 2004/05/31 18:01:23 jrblevin Exp $
+# $Id: Makefile,v 1.2 2004/05/31 21:18:07 jrblevin Exp $
 
 ###########################################################################
 ## BEGIN CONFIGURATION SECTION
@@ -21,6 +21,7 @@ LATEXFLAGS = -interaction=nonstopmode
 BIBTEX = bibtex
 PDFLATEX = pdflatex
 DVIPS = dvips
+ACROREAD = acroread
 
 ## END CONFIGURATION SECTION
 ###########################################################################
@@ -37,7 +38,8 @@ RCSFILES = $(BASENAME).tex $(SUPPORTS) Makefile
 
 ######################################################################
 
-all: $(BASENAME).dvi $(BASENAME).ps $(BASENAME).pdf
+#all: $(BASENAME).dvi $(BASENAME).ps $(BASENAME).pdf
+all: $(BASENAME).pdf
 
 $(BASENAME).aux: $(BASENAME).tex $(SUPPORTS) $(BIBFILE)
 	$(LATEX) $(LATEXFLAGS) $(BASENAME).tex
@@ -52,7 +54,7 @@ $(BASENAME).dvi: $(BASENAME).tex $(BASENAME).aux $(BBLFILE) $(BIBFILE)
 $(BASENAME).ps: $(BASENAME).dvi
 	$(DVIPS) $(BASENAME).dvi -o $@
 
-$(BASENAME).pdf: $(BASENAME).tex $(BASENAME).aux $(BIBFILE) $(BBLFILE)
+$(BASENAME).pdf: $(BASENAME).tex #$(BASENAME).aux $(BIBFILE) $(BBLFILE)
 	pdflatex -interaction=nonstopmode $(BASENAME).tex
 
 clean:
@@ -77,3 +79,6 @@ ci: $(RCSFILES)
 
 co: $(RCSFILES)
 	$(shell for i in $(RCSFILES) ; do co -l $$i ; done)
+
+preview: $(BASENAME).pdf
+	$(ACROREAD) $(BASENAME).pdf &
