@@ -1,12 +1,14 @@
-%% $Id: cv-us.tex,v 1.1 2004/05/31 21:17:50 jrblevin Exp $
+%% $Id: cv-us.tex,v 1.2 2004/06/07 03:07:51 jrblevin Exp $
 %%----------------------------------------------------------------------------
-%% Filename:      cv-us.tex
-%% Version:       $Revision: 1.1 $
-%% Description:   CV for Jason R. Blevins
-%% Author:        Jason R. Blevins <jason.r.blevins@duke.edu>
-%% Created:       Mon May 31 14:13:45 2004
+%% The layout of this resume is based on Michael Forman's CV template
+%% at http://www.Michael-Forman.com/vitae/.  I have modified his template
+%% to work with LaTeX 2e using res.cls instead of res.sty.  I have also
+%% included the hyperref package for including hypertext links in pdfs.
+%%
+%% Content is Copyright (C) 2004 Jason Blevins <jrblevin@sdf.lonestar.org>
 %%----------------------------------------------------------------------------
 %% To Do:
+%%   * Get the pdf information section working with latex 2e
 %%   * Add descriptions of Phi Beta Kappa and Phi Kappa Phi
 %%   * Update address and telephone number
 %%   * Add more details about positions
@@ -17,28 +19,7 @@
 %-----------------------------------------------------------------------------
 \newboolean{ref}
 \setboolean{ref}{false}
-%-----------------------------------------------------------------------------
-% http://www.uwm.edu/Dept/CDC/resume-develop.htm
-% http://www.mnworkforcecenter.org/cjs/cjs_site/index.htm
-%
-% Tips:
-%   - Resumes are not literary, they are promotional. 
-%   - The rules of grammar are modified from formal writing. 
-%   - Complete sentences are not necessary. 
-%   - Avoid the use of "I", as the subject of the resume is assumed to 
-%     be the person named in the heading of the resume. 
-%   - Avoid long narratives and use lots of bullets and key phrases. 
-%   - Someone looking at the resume should be able to figure out the 
-%     content without reading the details. 
-%   - The resume should draw the reader's attention and create a 
-%     desire to know more. 
-%   - The goal is to win an interview. 
-%   - It is at the interview that the job is won. 
-%   - The resume is like a preview of coming attractions. 
-%   - You want to save the best for the presentation. 
-%   - Therefore, it is best if the resume creates questions in the 
-%     mind of the reader.
-%-----------------------------------------------------------------------------
+
 \documentclass[margin,line,11pt,draft]{res}
 %\documentclass[overlapped,line,11pt,draft]{res}
 %-----------------------------------------------------------------------------
@@ -67,7 +48,7 @@
 %%   /Subject (Curriculum Vitae)
 %%   /Keywords (Applied Mathematics Economics Computer Science Differential Equations TANH method hyperbolic tangent centroid decomposition updating singular value decomposition linear algebra microeconomics System Administration Linux Unix German)
 %%   /Creator (pdfLaTeX)
-%%   /Producer ($Id: cv-us.tex,v 1.1 2004/05/31 21:17:50 jrblevin Exp $)
+%%   /Producer ($Id: cv-us.tex,v 1.2 2004/06/07 03:07:51 jrblevin Exp $)
 %% }
 %% \pdfcatalog{          %-- Catalog dictionary of PDF output.
 %%   %/PageMode
@@ -98,11 +79,7 @@
     22 Shepherd St Apt C \\
     Raleigh NC 27607 \\
     Phone: (919) 832-2695 \\
-%    Cell: (919) 624-4756 \\
-%    {\tt jrblevin@sdf.lonestar.org} \\
-%    {\tt jrb11@duke.edu} \\
     {\tt jason.r.blevins@duke.edu} \\
-%    {\tt http://jrblevin.freeshell.org/cv/} \\
     {\tt \verb+http://www.duke.edu/~jrb11/cv/+} \\
   \end{minipage}
   \hspace{\fill}
@@ -115,78 +92,6 @@
   \end{minipage}
 \end{minipage}
 %---------------------------------------------------------------------------
-%% Examples:
-%---------------------------------------------------------------------------
-%% \section{\sc Objective}
-%% %% Consulting position utilizing abilities to:
-%% Obtain position utilizing abilities to:
-%% \vspace{2mm}
-%% \begin{itemize}
-%%   \item Collaborate and advise on research projects in areas of expertise;
-%%   \item Actively seek funding through proposal writing and presentation;
-%%   \item Provide support as a technical team lead and project manager;
-%%   \item Employ critical thinking to develop innovative solutions; and
-%%   \item Use knowledge of cultures and languages to facilitate 
-%%         collaboration in international business settings.
-%% % \item Continue the ongoing pursuit of knowledge.
-%% \end{itemize}
-%---------------------------------------------------------------------------
-%% \section{\sc Summary}
-%% \begin{itemize}
-%%  \item[-] Ability to work independently, within a team, and supervise others
-%%  \item[-] Conceived, designed, and fabricated complex systems both
-%%           individually and as a team.
-%% \end{itemize}
-%---------------------------------------------------------------------------
-%% $\cdots$
-%% Relevant Course work:
-%% \vspace{2mm}
-%% \begin{itemize}
-%% \item{-} Design, fabrication and measurements of hybrid microwave 
-%%   circuits waveguides and transmission lines.
-%% \item{-} CAD antenna design.
-%% \item{-} Solid-state micro-fabrication laboratory.
-%% \item{-} Digital design.
-%% \end{itemize}
-%---------------------------------------------------------------------------
-%% %% Examples of Ph.D., M.S., and B.S. degrees
-%%
-%% \section{\sc Education}
-%%
-%% Ph.D., Electrical Engineering, May 2001; GPA: 4.0  \newline
-%% ``Active-Antenna Arrays for Power Combining and Communications'' \newline 
-%% Advisor: Dr.\ Zoya Popovi\'{c} \newline
-%% University of Colorado, Boulder, CO 
-%%
-%% M.S., Electrical Engineering, Spring 1998; GPA: 3.93 \newline
-%% Advisor: Dr.\ Zoya Popovi\'{c} \newline
-%% University of Colorado, Boulder, CO
-%%
-%% B.S., Electrical Engineering, Fall 1995; GPA: 3.75 \newline
-%% University of Colorado, Boulder, CO
-%---------------------------------------------------------------------------
-%% %% An example of using sections to describe various phases in a
-%% %% job at the same employer.  This is customized for the margin
-%% %% section heading option, rather than the overlapped style.
-%%
-%% \title{\em Senior Member of the Technical Staff, 
-%%            Telemetry and Instrumentation}
-%% \employer{\bf Sandia National Laboratories\\Albuquerque, NM}
-%% \dates{\bf April 2001 -- Present}
-%% \location{}
-%% %-- \section comes twixt \location{} & \begin{position}
-%% \section{\sc Research and\\Experience}
-%% \begin{position}
-%% \vspace{-1cm}
-%%
-%% \section{\sc \small \hspace{8mm}Oct 2001 \\\hspace{8mm}Present}
-%% [Job description for this date range....]
-%%
-%% \section{\sc \small \hspace{8mm}Apr 2001 \\\hspace{8mm}Oct 2001}
-%% [Job description for this date range....]
-%%
-%% \end{position}
-%---------------------------------------------------------------------------
 %% %% Other possible sections:
 %% \section{\sc Special Skills}
 %% \section{\sc Patents}
@@ -194,12 +99,15 @@
 %% \section{\sc Refereed Conference Proceedings}
 %% \section{\sc Conference Presentations}
 %------------------------------------------------------------------------------
+
 \begin{format}
 \title{l}\employer{r}\\
 \location{l}\dates{r}\\
 \body\\
 \end{format}
+
 %---------------------------------------------------------------------------
+
 \section{\sc Education}
 B.S., Applied Mathematics, Spring 2004; GPA: 3.99, Summa Cum Laude \newline
 North Carolina State University, Raleigh, NC
@@ -207,7 +115,9 @@ North Carolina State University, Raleigh, NC
 Study Abroad, \href{http://www.stolaf.edu/depts/math/budapest/}
 {Budapest Semesters in Mathematics}, Fall 2002 \newline
 Technical University of Budapest, Hungary
+
 %---------------------------------------------------------------------------
+
 \section{\sc Research and \\Experience}
 
 \title{\em Research Assistant \\ Department of Mathematics}
@@ -251,11 +161,8 @@ in- and out-of-house PC repair, sales, technical support, and database driven
 web site design. Supervisor: Cyrus Hurley.
 \end{position}
 
-%===========================================================================
-%\newpage
-%\opening
-
 %------------------------------------------------------------------------------
+
 \section{\sc Skills}
 \begin{itemize}
 \item Languages: intermediate German; basic familiarity with Hungarian
@@ -289,11 +196,7 @@ web site design. Supervisor: Cyrus Hurley.
 \item Dean's List: 2000 -- 2004
 \end{itemize}
 
-
-%===========================================================================
-
-%\newpage
-%\opening
+%------------------------------------------------------------------------------
 
 \section{\sc Submitted \\Papers}
 
@@ -302,6 +205,7 @@ and R.\ E.\ Funderlic, {\em The Effects of Ties on Convergence of the
 k-Modes Clustering Algorithm}.  % Submitted for publication on ?.
 
 %------------------------------------------------------------------------------
+
 \section{\sc Working \\Papers}
 
 J. R.\ Blevins and M. T. \ Chu, {\em Updating the Centroid
@@ -310,6 +214,7 @@ Decomposition with Applications in LSI}, 2003--2004.
 J. R.\ Blevins, {\em A Chronology of SVD Updating and LSI}, April 13, 2004.
 
 %------------------------------------------------------------------------------
+
 \section{\sc Scientific \\Software}
 
 J. R.\ Blevins, J. \ Heath, and W. \ Hereman,
@@ -319,19 +224,21 @@ J. R.\ Blevins, J. \ Heath, and W. \ Hereman,
 
 \section{\sc Presentations}
 
-%% % Later, when the list gets longer, use subsections by year like this:
+%% % Later, when the list (hopefully) gets longer, use subsections
+%% % by year like this:
 %% \section{\sc \small \hspace{8mm}2003}
 
-J. \ R. \ Blevins, {\em Solving Nonlinear Wave Equations with Mathematica},
-Undergraduate Research Presentations, North Carolina State University,
-Raleigh, NC, April 23, 2003.
-
+J. \ R. \ Blevins, {\em Solving Nonlinear Wave Equations with
+Mathematica}, Undergraduate Research Presentations, North Carolina
+State University, Raleigh, NC, April 23, 2003.
 
 \vspace{\fill}\ \newline
 {\tiny \rm $ $RCSfile: cv-us.tex,v $ $ }
-{\tiny \rm $ $Date: 2004/05/31 21:17:50 $ $ }
-{\tiny \rm $ $Revision: 1.1 $ $ }
+{\tiny \rm $ $Date: 2004/06/07 03:07:51 $ $ }
+{\tiny \rm $ $Revision: 1.2 $ $ }
+
 %------------------------------------------------------------------------------
+
 \ite{\bl{ref}}{        
 
 \newpage
