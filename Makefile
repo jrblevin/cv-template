@@ -1,4 +1,4 @@
-# $Id: Makefile,v 1.6 2005/01/08 21:28:01 jrblevin Exp $
+# $Id: Makefile,v 1.7 2005/03/25 05:37:07 jrblevin Exp $
 ###############################################################################
 # LaTeX Makefile for curriculum vitae template cv-us.tex
 # Copyright (C) 2003-2004 Jason Blevins <jrblevin@sdf.lonestar.org>
@@ -61,7 +61,7 @@ GGV = ggv
 DISTFILES = *.aux *.log *~ *.blg *.bbl *.dvi *.toc
 CLEANFILES = $(DISTFILES) *.ps *.pdf *.zip *.tar.gz
 
-TEMPLATE_FILES = Makefile $(BASENAME).tex COPYING
+TEMPLATE_FILES = Makefile $(BASENAME).tex gpl.txt
 
 # Website
 
