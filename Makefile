@@ -1,4 +1,4 @@
-# $Id: Makefile,v 1.7 2005/03/25 05:37:07 jrblevin Exp $
+# $Id: Makefile,v 1.8 2005/03/25 05:40:28 jrblevin Exp $
 ###############################################################################
 # LaTeX Makefile for curriculum vitae template cv-us.tex
 # Copyright (C) 2003-2004 Jason Blevins <jrblevin@sdf.lonestar.org>
@@ -66,7 +66,7 @@ TEMPLATE_FILES = Makefile $(BASENAME).tex gpl.txt
 # Website
 
 WEBSITE_FILES = $(BASENAME).ps $(BASENAME).pdf cv-template.tar.gz \
-	$(OTHER_FILES) Makefile $(BASENAME).tex
+	$(OTHER_FILES) $(TEMPLATE_FILES)
 
 WEBSITE_PATH = /home/jrblevin/data/web/duke/content/cv/
 
