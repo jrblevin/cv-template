@@ -1,4 +1,4 @@
-# $Id: Makefile,v 1.2 2004/05/31 21:18:07 jrblevin Exp $
+# $Id: Makefile,v 1.3 2004/05/31 22:36:52 jrblevin Exp $
 
 ###########################################################################
 ## BEGIN CONFIGURATION SECTION
@@ -8,7 +8,7 @@ BASENAME = cv-us
 
 # Any supporting files needed to compile $(BASENAME).tex such as
 # included tex files or figures
-SUPPORTS = # misc.tex
+SUPPORTS = cv-us.html
 
 # Uncomment the next two lines if you wish to use bibtex.  These lines
 # assume the bib file is $(BASENAME).bib.  Modify if needed.
@@ -38,8 +38,7 @@ RCSFILES = $(BASENAME).tex $(SUPPORTS) Makefile
 
 ######################################################################
 
-#all: $(BASENAME).dvi $(BASENAME).ps $(BASENAME).pdf
-all: $(BASENAME).pdf
+all: $(BASENAME).dvi $(BASENAME).ps $(BASENAME).pdf
 
 $(BASENAME).aux: $(BASENAME).tex $(SUPPORTS) $(BIBFILE)
 	$(LATEX) $(LATEXFLAGS) $(BASENAME).tex
