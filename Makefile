@@ -1,4 +1,4 @@
-# $Id: Makefile,v 1.5 2004/06/07 00:58:25 jrblevin Exp $
+# $Id: Makefile,v 1.6 2005/01/08 21:28:01 jrblevin Exp $
 ###############################################################################
 # LaTeX Makefile for curriculum vitae template cv-us.tex
 # Copyright (C) 2003-2004 Jason Blevins <jrblevin@sdf.lonestar.org>
@@ -49,7 +49,11 @@ LATEXFLAGS = -interaction=nonstopmode
 BIBTEX = bibtex
 PDFLATEX = pdflatex
 DVIPS = dvips
+DVIPSFLAGS = -t letter
+
 ACROREAD = acroread
+XDVI = xdvi
+GGV = ggv
 
 ###############################################################################
 # File lists
@@ -59,13 +63,20 @@ CLEANFILES = $(DISTFILES) *.ps *.pdf *.zip *.tar.gz
 
 TEMPLATE_FILES = Makefile $(BASENAME).tex COPYING
 
+# Website
+
+WEBSITE_FILES = $(BASENAME).ps $(BASENAME).pdf cv-template.tar.gz \
+	$(OTHER_FILES) Makefile $(BASENAME).tex
+
+WEBSITE_PATH = /home/jrblevin/data/web/duke/content/cv/
+
 ###############################################################################
 # Build rules
 
 all: $(BASENAME).dvi $(BASENAME).ps $(BASENAME).pdf
 
-preview: $(BASENAME).pdf
-	$(ACROREAD) $(BASENAME).pdf &
+preview: $(BASENAME).dvi
+	$(XDVI) $(BASENAME).dvi &
 
 $(BASENAME).aux: $(BASENAME).tex $(SUPPORTS) $(BIBFILE)
 	$(LATEX) $(LATEXFLAGS) $(BASENAME).tex
@@ -78,7 +89,7 @@ $(BASENAME).dvi: $(BASENAME).tex $(BASENAME).aux $(BBLFILE) $(BIBFILE)
 	$(LATEX) $(LATEXFLAGS) $(BASENAME).tex
 
 $(BASENAME).ps: $(BASENAME).dvi
-	$(DVIPS) $(BASENAME).dvi -o $@
+	$(DVIPS) $(BASENAME).dvi -o $@ $(DVIPSFLAGS)
 
 $(BASENAME).pdf: $(BASENAME).tex #$(BASENAME).aux $(BIBFILE) $(BBLFILE)
 	pdflatex -interaction=nonstopmode $(BASENAME).tex
@@ -95,6 +106,12 @@ cv-template.tar.gz: $(TEMPLATE_FILES)
 	-rm -rf cv-template
 
 ###############################################################################
+# Website Rules
+
+website: $(WEBSITE_FILES)
+	cp -avf $(WEBSITE_FILES) $(WEBSITE_PATH)
+
+###############################################################################
 # Clean-up rules
 
 clean:
@@ -108,7 +125,8 @@ distclean:
 # No longer used
 
 # For RCS check-in and -out (Now under CVS control in a larger module)
-RCSFILES = $(BASENAME).tex $(SUPPORTS) Makefile
+RCSFILES = $(BASENAME).tex $(SUPPORTS) Makefile $(OTHER_FILES) \
+	$(BASENAME).pdf $(BASENAME).ps cv-template.tar.gz
 
 ci: $(RCSFILES)
 	$(shell for i in $(RCSFILES) ; do ci -u $$i ; done)
