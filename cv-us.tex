@@ -1,24 +1,16 @@
-%% $Id: cv-us.tex,v 1.8 2004/12/31 17:07:33 jrblevin Exp $
-%%----------------------------------------------------------------------------
-%% The layout of this resume is based on Michael Forman's CV template
-%% at http://www.Michael-Forman.com/vitae/.  I have modified his template
-%% to work with LaTeX 2e using res.cls instead of res.sty.  I have also
-%% included the hyperref package for including hypertext links in pdfs.
+%% $Id: cv-us.tex,v 1.9 2005/04/19 00:26:28 jrblevin Exp $
+%% ----------------------------------------------------------------------------
+%% This layout is based on Michael Forman's CV template at
+%% http://www.Michael-Forman.com/vitae/.  I have modified his template
+%% to work with LaTeX 2e using res.cls instead of res.sty.  I have
+%% also included the hyperref package for including hypertext links in
+%% PDFss.
 %%
-%% Content is Copyright (C) 2004 Jason Blevins <jrblevin@sdf.lonestar.org>
+%% Copyright (C) 2004 Jason Blevins <jrblevin@sdf.lonestar.org>
 %%----------------------------------------------------------------------------
 %% To Do:
 %%   * Get the pdf information section working with latex 2e
-%%   * Add descriptions of Phi Beta Kappa and Phi Kappa Phi
-%%   * Update address and telephone number
-%%   * Add more details about positions
 %%----------------------------------------------------------------------------
-\RequirePackage{ifthen}
-\newcommand{\ite}{\ifthenelse}
-\newcommand{\bl}{\boolean}
-%-----------------------------------------------------------------------------
-\newboolean{ref}
-\setboolean{ref}{false}
 
 \documentclass[margin,line,11pt,final]{res}
 %\documentclass[overlapped,line,11pt,draft]{res}
@@ -31,7 +23,7 @@
 %% pdftitle={Curriculum Vitae},
 %% pdfauthor={Jason R. Blevins},
 %% pdfcreator={pdfLaTeX},
-%% pdfproducer={$Id: cv-us.tex,v 1.8 2004/12/31 17:07:33 jrblevin Exp $},
+%% pdfproducer={$Id: cv-us.tex,v 1.9 2005/04/19 00:26:28 jrblevin Exp $},
 %% pdfsubject={Curriculum Vitae},
 %% pdfkeywords={Applied Mathematics Economics Computer Science
 %%     Differential Equations TANH method hyperbolic tangent centroid
@@ -69,14 +61,13 @@
     Fax: (919) 684-8974
   \end{minipage}
 \end{minipage}
-%---------------------------------------------------------------------------
+%%-------------------------------------------------------------------------
 %% %% Other possible sections:
-%% \section{\sc Special Skills}
-%% \section{\sc Patents}
 %% \section{\sc Journal Publications}
+%% \section{\sc Books}
 %% \section{\sc Refereed Conference Proceedings}
 %% \section{\sc Conference Presentations}
-%------------------------------------------------------------------------------
+%%--------------------------------------------------------------------------
 
 \begin{format}
 \title{l}\employer{r}\\
@@ -219,74 +210,8 @@ State University, Raleigh, NC. April 23, 2003.
 
 \vspace{\fill}\ \newline
 {\tiny \rm $ $RCSfile: cv-us.tex,v $ $ }
-{\tiny \rm $ $Date: 2004/12/31 17:07:33 $ $ }
-{\tiny \rm $ $Revision: 1.8 $ $ }
-
-%------------------------------------------------------------------------------
-
-\ite{\bl{ref}}{        
-
-\newpage
-\opening
-\section{\sc References}
-
-%% Sample reference sheet:
-%% http://www.uwm.edu/Dept/CDC/resrefer.htm 
-%% References DO NOT belong on the resume. 
-%% They should be listed on a separate sheet. 
-%% Send the references with the resume only when 
-%% specifically requested by the employer. 
-%% There is no need to state "References available upon request." 
-%% It is assumed that you will provide them. 
-
-
-%
-Reference A. Person \newline
-Sandia National Laboratories \newline
-000-000-0000 \newline
-{\tt devnull@Sandia.GOV} \newline
-Impressive Title for Person
-
-
-
-%
-Reference A. Person \newline
-Sandia National Laboratories \newline
-000-000-0000 \newline
-{\tt devnull@Sandia.GOV} \newline
-Impressive Title for Person
-
-
-
-%
-Reference A. Person \newline
-Sandia National Laboratories \newline
-000-000-0000 \newline
-{\tt devnull@Sandia.GOV} \newline
-Impressive Title for Person
-
-
-
-%
-Reference A. Person \newline
-Sandia National Laboratories \newline
-000-000-0000 \newline
-{\tt devnull@Sandia.GOV} \newline
-Impressive Title for Person
-
-
-
-%
-Reference A. Person \newline
-Sandia National Laboratories \newline
-000-000-0000 \newline
-{\tt devnull@Sandia.GOV} \newline
-Impressive Title for Person
-
-
-
-}
-
+{\tiny \rm $ $Date: 2005/04/19 00:26:28 $ $ }
+{\tiny \rm $ $Revision: 1.9 $ $ }
 
 \end{resume}
 
