@@ -2,7 +2,7 @@
 #
 # LaTeX Makefile for curriculum vitae template cv-us.tex
 #
-# $Id: Makefile,v 1.10 2005/04/19 00:42:10 jrblevin Exp $
+# $Id: Makefile,v 1.11 2005/04/19 00:42:31 jrblevin Exp $
 #
 # Jason Blevins <jrblevin@sdf.lonestar.org>
 #
@@ -43,7 +43,7 @@ GGV = ggv
 DISTFILES = *.aux *.log *~ *.blg *.bbl *.dvi *.toc
 CLEANFILES = $(DISTFILES) *.ps *.pdf *.zip *.tar.gz
 
-TEMPLATE_FILES = Makefile $(BASENAME).tex COPYING
+TEMPLATE_FILES = Makefile $(BASENAME).tex
 
 # Website
 
