@@ -2,7 +2,7 @@
 #
 # LaTeX Makefile for curriculum vitae template cv-us.tex
 #
-# $Id: Makefile,v 1.11 2005/04/19 00:42:31 jrblevin Exp $
+# $Id: Makefile,v 1.12 2005/07/06 22:09:44 jrblevin Exp $
 #
 # Jason Blevins <jrblevin@sdf.lonestar.org>
 #
@@ -18,7 +18,7 @@ BASENAME = cv-us
 SUPPORTS = 
 
 # Other files that will be included in an archive
-OTHER_FILES = cv-us.html cv-us.txt
+OTHER_FILES = #cv-us.html cv-us.txt
 
 # Uncomment the next two lines if you wish to use bibtex.  These lines
 # assume the bib file is $(BASENAME).bib.  Modify if needed.
