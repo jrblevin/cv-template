@@ -1,165 +1,214 @@
-%% $Id: cv-us.tex,v 1.9 2005/04/19 00:26:28 jrblevin Exp $
-%% ----------------------------------------------------------------------------
-%% This layout is based on Michael Forman's CV template at
-%% http://www.Michael-Forman.com/vitae/.  I have modified his template
-%% to work with LaTeX 2e using res.cls instead of res.sty.  I have
-%% also included the hyperref package for including hypertext links in
-%% PDFss.
-%%
-%% Copyright (C) 2004 Jason Blevins <jrblevin@sdf.lonestar.org>
-%%----------------------------------------------------------------------------
-%% To Do:
-%%   * Get the pdf information section working with latex 2e
+%% cv-us.tex
+%
+% Jason R. Blevins - Curriculum Vitae
+%
+% Copyright (C) 2004-2005 Jason Blevins <jrb11@duke.edu>
+%
+% $Id: cv-us.tex,v 1.10 2005/07/06 21:58:31 jrblevin Exp $
+%
+%%---------------------------------------------------------------------------
+%
+% Notes:
+%
+% * To create a new page use
+%   \newpage \opening
+%
+% * res.cls includes an \address{} command which can be used up to twice,
+%   but my address is too long for the format it uses.
+%
+% * Alternate documentclass command:
+%   \documentclass[margin,line,11pt,final]{res}
+%
+% * When publication/presentation list gets longer, divide into subsections
+%   by year like this:
+%   \section{\bf\small\hspace{8mm}2005}
+%
 %%----------------------------------------------------------------------------
 
-\documentclass[margin,line,11pt,final]{res}
-%\documentclass[overlapped,line,11pt,draft]{res}
-%-----------------------------------------------------------------------------
-\usepackage[colorlinks,urlcolor=black]{hyperref}
-%-----------------------------------------------------------------------------
-%% % To enable extended pdf support, add pdftex and the following to the
-%% % hyperref \usepackage line in the [..] section:
-%%
-%% pdftitle={Curriculum Vitae},
-%% pdfauthor={Jason R. Blevins},
-%% pdfcreator={pdfLaTeX},
-%% pdfproducer={$Id: cv-us.tex,v 1.9 2005/04/19 00:26:28 jrblevin Exp $},
-%% pdfsubject={Curriculum Vitae},
-%% pdfkeywords={Applied Mathematics Economics Computer Science
-%%     Differential Equations TANH method hyperbolic tangent centroid
-%%     decomposition updating singular value decomposition linear algebra
-%%     microeconomics System Administration Linux Unix German}
-%-----------------------------------------------------------------------------
+\documentclass[overlapped,line,draft,11pt,letterpaper]{res}
+
+\usepackage{hyperref}
+
+\hypersetup{
+  colorlinks,urlcolor=black,
+  pdftitle={Jason R. Blevins: Curriculum Vitae},
+  pdfauthor={Jason R. Blevins},
+  pdfcreator={\LaTeX\ with package \flqq hyperref\frqq},
+  pdfsubject={Curriculum Vitae},
+  pdfkeywords={economics microeconomics empirical urban game theory
+    applied mathematics differential equations TANH method hyperbolic
+    tangent centroid decomposition updating singular value
+    decomposition linear algebra microeconomics linux unix german}
+}
+
 \def\Cplusplus{{\rm C\raise.5ex\hbox{\small ++}}}
-%-----------------------------------------------------------------------------
+
+%%===========================================================================%%
+
 \begin{document}
 
-\name{{\Large \bf Jason R. Blevins}}
-
-%\address{
-%}
-%\address{
-%}
+\name{Jason R. Blevins}
 
 \begin{resume}
 
-\hspace{-0cm}
-\begin{minipage}{1.25\linewidth}
-  \begin{minipage}{0.45\linewidth}
-    Department of Economics\\
-    213 Social Science \\
-    Box 90097 \\
-    Duke University \\
-    Durham NC 27008-0097 \\
-    USA
-  \end{minipage}
-  \hspace{\fill}
-  \begin{minipage}{0.55\linewidth}
-    {\tt jrb11@duke.edu} \\
-    {\tt \verb+http://www.duke.edu/~jrb11/+} \\
-    Phone: (919) 624-4756 \\
-    Fax: (919) 684-8974
-  \end{minipage}
-\end{minipage}
-%%-------------------------------------------------------------------------
-%% %% Other possible sections:
-%% \section{\sc Journal Publications}
-%% \section{\sc Books}
-%% \section{\sc Refereed Conference Proceedings}
-%% \section{\sc Conference Presentations}
-%%--------------------------------------------------------------------------
+\begin{ncolumn}{2}
+  Department of Economics       & Phone: 919.624.4756\\
+  213 Social Sciences Bldg.     & Fax: 919.684.8974\\
+  Box 90097                     & {\tt jrb11@duke.edu}\\
+  Duke University               & {\tt \verb+http://www.duke.edu/~jrb11/+}\\
+  Durham, NC 27008-0097         & \\
+  USA                           & \\
+\end{ncolumn}
+
+%---------------------------------------------------------------------------
+
+\section{\bf Education}
+Ph.D. in Economics, Expected 2009 \newline
+Duke University, Durham, NC, USA
+
+B.S. in Applied Mathematics, {\it Summa Cum Laude}, May 2004 \newline
+North Carolina State University, Raleigh, NC, USA
+
+\href{http://www.stolaf.edu/depts/math/budapest/} {Budapest Semesters
+in Mathematics},  Fall 2002, \newline
+Budapest University of Technology and Economics, Budapest, Hungary.
+
+%---------------------------------------------------------------------------
+
+\section{\bf Research}
 
 \begin{format}
-\title{l}\employer{r}\\
-\location{l}\dates{r}\\
+\employer{l}\location{r}\\
+\title{l}\dates{r}\\
 \body\\
 \end{format}
 
+\employer{Duke University\\Terry Sanford Institute of Public Policy}
+\title{Research Assistant}
+\location{Durham, NC, USA}
+\dates{Summer 2005}
+\begin{position}
+  Professor Jacob L. Vigdor.  Empirical analysis of the
+  effects of community homogeneity on voting behavior due to
+  individual perceptions of relative economic well-being.
+\end{position}
+
+\employer{North Carolina State University}
+\title{Research Assistant}
+\location{Raleigh, NC, USA}
+\dates{2003--2004}
+\begin{position}
+  Professor Moody T. Chu and Professor Robert E. \
+  Funderlic.  Investigation of data mining and clustering methods and
+  their applications. Development of updating methods for the centroid
+  decomposition.
+\end{position}
+
+\employer{Colorado School of Mines}
+\title{Research Assistant}
+\location{Golden, CO, USA}
+\dates{Summer 2002}
+\begin{position}
+  Professor Willy A. M. Hereman. Development of a Mathematica
+  package to compute exact hyperbolic and elliptical solutions to
+  systems of nonlinear partial differential equations.
+\end{position}
+
 %---------------------------------------------------------------------------
 
-\section{\sc Education}
-Ph.D. Program in Economics, August 2004--Present \newline
-Duke University, Durham, NC, USA
+\section{\bf Teaching}
 
-B.S., Applied Mathematics, Summa Cum Laude, May 2004 \newline
-North Carolina State University, Raleigh, NC, USA
+% \title{Head Teaching Assistant}
+% \employer{Duke University}
+% \location{Durham, NC, USA}
+% \dates{Spring 2006}
+% \begin{position}
+%   Microeconomic Analysis II (ECON 302, Graduate).  Instructor:
+%   Professor Curtis R. Taylor.
+% \end{position}
 
-\href{http://www.stolaf.edu/depts/math/budapest/}
-{Budapest Semesters in Mathematics}, Fall 2002 \newline
-Technical University of Budapest, Hungary
+\employer{Duke University}
+\title{Head Teaching Assistant}
+\location{Durham, NC, USA}
+\dates{Fall 2005}
+\begin{position}
+  ECON 301: Microeconomic Analysis I. Professor Thomas J. Nechyba.
+  Graduate Course.
+\end{position}
+
+\title{Mathematics Tutor}
+\employer{North Carolina State University}
+\location{Raleigh, NC, USA}
+\dates{Summer 2001}
+\begin{position}
+  Algebra II and Calculus I, II, and III.  Supervisor: Jody Moylon.
+\end{position}
+
+%------------------------------------------------------------------------------
+
+%\section{\bf Employment}
+%
+% \title{Computer Technician}
+% \employer{Hurley Technology Resources}
+% \location{Jefferson, NC, USA}
+% \dates{1999--2000}
+% \begin{position}
+% Windows and UNIX networking for businesses and internet service providers,
+% in- and out-of-house PC repair, sales, technical support, and database driven
+% web site design. Supervisor: Cyrus Hurley.
+% \end{position}
+
+%------------------------------------------------------------------------------
+
+\section{\bf Submitted Papers}
+
+N. \ Orlowski, D. \ Schlorff, J. \ Blevins, D. \ Ca\~{n}as, M. \ T. \
+Chu, and R.\ E.\ Funderlic, {\em The Effects of Ties on Convergence in
+  K-Modes Variants for Clustering Categorical Data}. Submitted June 7,
+2004.
+
+%------------------------------------------------------------------------------
+
+\section{\bf Working Papers}
+
+J.\ R.\ Blevins, M. T. \ Chu, D. Ca\~{n}as, R. E. Funderlic, N.
+Orlowski, and D. Schlorff, {\em Updating the Centroid Decomposition
+  with Applications in LSI}, 2003--2004.
+
+%------------------------------------------------------------------------------
+
+\section{\bf Scientific Software}
+
+J.\ R.\ Blevins, J. \ Heath, and W. \ Hereman.
+\texttt{PDESolutionTester.m}.  A Mathematica program for the symbolic
+verification of exact solutions of nonlinear partial differential
+equations. 2002.
+
+%------------------------------------------------------------------------------
+
+\section{\bf Presentations}
+
+J.\ R.\ Blevins. {\em Solving Nonlinear Wave Equations with
+  Mathematica}. Undergraduate Research Presentations, North Carolina
+State University, Raleigh, NC. April 23, 2003.
+
 
 %---------------------------------------------------------------------------
 
-\section{\sc Research and \\Experience}
+\section{\bf Awards}
 
-\title{\em Research Assistant \\ Department of Mathematics}
-\employer{\bf North Carolina State University \\ Raleigh, NC, USA}
-\location{}
-\dates{\bf 2003--2004}
-\begin{position}
-Investigation of data mining and clustering methods and their
-applications. Updating methods for the Singular Value and Centroid
-Decompositions. Under the supervision of Professor M. T. \ Chu and
-Professor R. E. \ Funderlic.
-\end{position}
-
-\title{\em Research Assistant \\ Mathematical and Computer Sciences}
-\employer{\bf Colorado School of Mines \\ Golden, CO, USA}
-\location{}
-\dates{\bf Summer 2002}
-\begin{position}
-Development of Mathematica software to compute exact hyperbolic and
-elliptic solutions to systems of nonlinear partial differential
-equations. Supported an undergraduate research grant from the National
-Science Foundation.  Under the supervision of Professor W. \ Hereman.
-\end{position}
-
-\title{\em Mathematics Tutor \\ Academic Support for Student Athletes}
-\employer{\bf North Carolina State University \\ Raleigh, NC, USA}
-\location{}
-\dates{\bf Summer 2001}
-\begin{position}
-Individually tutored five student athletes Algebra II, Calculus I, II,
-and III. Supervisor: Jody Moylon.
-\end{position}
-
-\title{\em Computer Technician \\ Network and System Administration}
-\employer{\bf Hurley Technology Resources \\ Jefferson, NC, USA}
-\location{}
-\dates{\bf 1999--2000}
-\begin{position}
-Windows and UNIX networking for businesses and internet service providers,
-in- and out-of-house PC repair, sales, technical support, and database driven
-web site design. Supervisor: Cyrus Hurley.
-\end{position}
-
-%==============================================================================
-\newpage
-\opening
-%---------------------------------------------------------------------------
-
-\section{\sc Skills}
 \begin{itemize}
-\item Languages: intermediate German, basic Spanish, some familiarity
-  with Hungarian
-\item Computer Skills: Matlab, Mathematica, Maple, Java, C,
-  \Cplusplus, HTML, PHP, Linux, Unix
-\item Expert knowledge of the Unix operating system and related
-  applications.
-\item Advanced knowledge of the professional typesetting package \LaTeX
-\item Strong technical writing and grammar skills
+\item Undergraduate Research Award, North Carolina State University,
+  Spring 2004
+\item Chancellor's Leadership Award (Scholarship), North Carolina State
+  University, 2000
+\item Dean's Merit Award (Scholarship), Department of Engineering, North
+  Carolina State University, 2000
 \end{itemize}
 
-\section{\sc Awards}
-\begin{itemize}
-\item N.C. State University Undergraduate Research Award, Spring 2004
-\item National Science Foundation (NSF) Research Experience for
-  Undergraduates (REU), Summer 2002
-\item NCSU Chancellor's Leadership Award %(Scholarship)
-\item NCSU Engineering Dean's Merit Award %(Scholarship)
-\end{itemize}
+%%---------------------------------------------------------------------------%%
 
-\section{\sc Honors}
+\section{\bf Honors}
 \begin{itemize}
 \item \href{http://www.pbk.org/}{Phi Beta Kappa}
 \item \href{http://www.cba.ua.edu/~ode/}
@@ -167,52 +216,33 @@ web site design. Supervisor: Cyrus Hurley.
 \item \href{http://www.pme-math.org/}
   {Pi Mu Epsilon} -- Honorary National Mathematics Society
 \item \href{http://www.phikappaphi.org/}{Phi Kappa Phi}
-\item Vice President, NCSU Society of Undergraduate Mathematics, 2001--2003
+\item Vice President, Society of Undergraduate Mathematics, North
+  Carolina State University, 2001--2003
 \item \href{http://www.goldenkey.org}{Golden Key International Honour Society}
-\item Dean's List: 2000 -- 2004
+\item Dean's List, North Carolina State University, 2000--2004
 \end{itemize}
 
-%------------------------------------------------------------------------------
+%%---------------------------------------------------------------------------%%
 
-\section{\sc Submitted \\Papers}
+\section{\bf Skills}
+\begin{itemize}
+\item {\it Languages:} English (native), intermediate German,
+  some experience with Spanish and Hungarian
+\item {\it Computer Skills:} Stata, Matlab, Mathematica, Maple, Java, C,
+  \Cplusplus, Unix, Linux, \LaTeX, HTML
+\end{itemize}
 
-N. \ Orlowski, D. \ Schlorff, J. \ Blevins, D. \ Ca\~{n}as, M. \ T. \
-Chu, and R.\ E.\ Funderlic, {\em The Effects of Ties on Convergence in
-  K-Modes Variants for Clustering Categorical Data}. June 7, 2004.
-% Submitted for publication on ?.
+%%---------------------------------------------------------------------------%%
 
-%------------------------------------------------------------------------------
-
-\section{\sc Working \\Papers}
-
-J. R.\ Blevins, M. T. \ Chu, D. Ca\~{n}as, R. E. Funderlic, N.
-Orlowski, and D. Schlorff, {\em Updating the Centroid Decomposition with
-  Applications in LSI}, 2003--2004.
-
-%------------------------------------------------------------------------------
-
-\section{\sc Scientific \\Software}
-
-J. R.\ Blevins, J. \ Heath, and W. \ Hereman.
-  \texttt{PDESolutionTester.m}.  A Mathematica program for the symbolic
-  verification of exact solutions of nonlinear partial differential
-  equations. 2002.
-
-\section{\sc Presentations}
-
-%% % Later, when the list (hopefully) gets longer, use subsections
-%% % by year like this:
-%% \section{\sc \small \hspace{8mm}2003}
-
-J. \ R. \ Blevins. {\em Solving Nonlinear Wave Equations with
-Mathematica}. Undergraduate Research Presentations, North Carolina
-State University, Raleigh, NC. April 23, 2003.
-
+\begin{center}
 \vspace{\fill}\ \newline
 {\tiny \rm $ $RCSfile: cv-us.tex,v $ $ }
-{\tiny \rm $ $Date: 2005/04/19 00:26:28 $ $ }
-{\tiny \rm $ $Revision: 1.9 $ $ }
+{\tiny \rm $ $Date: 2005/07/06 21:58:31 $ $ }
+{\tiny \rm $ $Revision: 1.10 $ $ }
+\end{center}
 
 \end{resume}
 
 \end{document}
+
+%%===========================================================================%%
