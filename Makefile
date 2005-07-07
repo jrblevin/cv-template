@@ -2,7 +2,7 @@
 #
 # LaTeX Makefile for curriculum vitae template cv-us.tex
 #
-# $Id: Makefile,v 1.12 2005/07/06 22:09:44 jrblevin Exp $
+# $Id: Makefile,v 1.13 2005/07/06 22:12:32 jrblevin Exp $
 #
 # Jason Blevins <jrblevin@sdf.lonestar.org>
 #
@@ -47,10 +47,10 @@ TEMPLATE_FILES = Makefile $(BASENAME).tex
 
 # Website
 
-WEBSITE_FILES = $(BASENAME).ps $(BASENAME).pdf cv-template.tar.gz \
+WEBSITE_FILES = $(BASENAME).pdf cv-template.tar.gz \
 	$(OTHER_FILES) $(TEMPLATE_FILES)
 
-WEBSITE_PATH = /home/jrblevin/data/web/duke/content/cv/
+WEBSITE_PATH = /home/jrblevin/data/computer/web/duke/content/cv/
 
 ###############################################################################
 # Build rules
