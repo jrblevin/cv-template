@@ -4,7 +4,7 @@
 %
 % Copyright (C) 2004-2006 Jason Blevins <jrb11@duke.edu>
 %
-% $Id: cv-us.tex,v 1.18 2006/03/22 02:15:15 jrblevin Exp $
+% $Id: cv-us.tex,v 1.19 2006/05/10 13:52:07 jrblevin Exp $
 %
 %%---------------------------------------------------------------------------
 %
@@ -34,9 +34,9 @@
   pdfauthor={Jason R. Blevins},
   pdfcreator={\LaTeX\ with package \flqq hyperref\frqq},
   pdfsubject={Curriculum Vitae},
-  pdfkeywords={economics microeconomics empirical urban game theory
-    applied mathematics differential equations TANH method hyperbolic
-    tangent centroid decomposition updating singular value
+  pdfkeywords={economics microeconomics econometrics empirical urban
+    game theory applied mathematics differential equations TANH method
+    hyperbolic tangent centroid decomposition updating singular value
     decomposition linear algebra microeconomics linux unix german}
 }
 
@@ -45,6 +45,18 @@
 %%===========================================================================%%
 
 \begin{document}
+
+%---------------------------------------------------------------------------
+% Document Specific Customizations
+
+% Make lists without bullets and with no indentation
+\setlength{\leftmargini}{0em}
+\renewcommand{\labelitemi}{}
+
+% Use large bold font for printed name at top of pages
+\renewcommand{\namefont}{\large\textbf}
+
+%---------------------------------------------------------------------------
 
 \name{Jason R. Blevins}
 
@@ -65,62 +77,55 @@ Ph.D. Economics, Duke University, 2009 (Expected)
 
 A.M. Economics, Duke University, 2006
 
-B.S. Applied Mathematics, North Carolina State University, 2004, {\it Summa Cum Laude}
-
-%\href{http://www.stolaf.edu/depts/math/budapest/} {Budapest Semesters
-%in Mathematics}, Budapest University of Technology and Economics, 2002
+B.S. Applied Mathematics, North Carolina State University, 2004,
+{\it Summa Cum Laude}
 
 %---------------------------------------------------------------------------
 
 \section{\bf Research}
 
 \begin{format}
-\employer{l}\location{r}\\
 \title{l}\dates{r}\\
+\employer{l}\location{r}\\
 \body\\
 \end{format}
 
-%\employer{Duke University}
-%\title{Research Assistant}
-%\location{Durham, NC}
-%\dates{June 2005--Present}
-%\begin{position}
-%  Professor Jacob\ L.\ Vigdor, Terry Sanford Institute of Public
-%  Policy.  Empirical analysis of the effects of community homogeneity
-%  on voting behavior due to individual perceptions of relative
-%  economic well-being.
-%\end{position}
+% \title{Research Assistant}
+% \employer{Han Hong}
+% \location{Duke University}
+% \dates{2006}
+% \begin{position}
+%
+% \end{position}
 
-\employer{Duke University}
 \title{Research Assistant}
-\location{Durham, NC}
-\dates{June 2005--Present}
+\employer{Jacob\ Vigdor}
+\location{Duke University}
+\dates{2005--2006}
 \begin{position}
-  Professor Jacob\ L.\ Vigdor, Terry Sanford Institute of Public
-  Policy.  Empirical analysis of the effects of community homogeneity
-  on voting behavior due to individual perceptions of relative
-  economic well-being.
+  Empirical analysis of the effects of community homogeneity on voting
+  behavior due to individual perceptions of relative economic
+  well-being.
 \end{position}
 
-\employer{North Carolina State University}
 \title{Research Assistant}
-\location{Raleigh, NC}
+\employer{Moody\ Chu and Robert\ Funderlic}
+\location{N.C. State University}
 \dates{2003--2004}
 \begin{position}
-  Professor Moody\ T.\ Chu and Professor Robert\ E.\ Funderlic.
   Investigation of data mining and clustering methods and their
   applications. Development of updating methods for the centroid
   decomposition.
 \end{position}
 
-\employer{Colorado School of Mines}
 \title{Research Assistant}
-\location{Golden, CO}
-\dates{Summer 2002}
+\employer{Willy\ Hereman}
+\location{Colorado School of Mines}
+\dates{2002}
 \begin{position}
-  Professor Willy\ A.\ M.\ Hereman. Development of a symbolic software
-  package to compute exact hyperbolic and elliptical solutions to
-  systems of nonlinear partial differential equations.
+  Development of a symbolic software package to compute exact
+  hyperbolic and elliptical solutions to systems of nonlinear partial
+  differential equations.
 \end{position}
 
 %---------------------------------------------------------------------------
@@ -128,14 +133,23 @@ B.S. Applied Mathematics, North Carolina State University, 2004, {\it Summa Cum 
 \section{\bf Teaching Experience}
 
 \begin{itemize}
-\item Head TA, Microeconomic Analysis II (Graduate), Duke University, 2006
-\item Head TA, Microeconomic Analysis I (Graduate), Duke University, 2005
-\item Mathematics Tutor, N.C. State University, 2001
+% \item Teaching Assistant, Econometrics I (Graduate), Duke University,
+%   Fall 2006
+\item Teaching Assistant, Graduate Game Theory, Duke University, Spring 2006
+\item Teaching Assistant, Graduate Microeconomic Analysis I, Duke
+  University, Fall 2005
+\item Mathematics Tutor, North Carolina State University, 2001
 \end{itemize}
 
 %------------------------------------------------------------------------------
 
 %\section{\bf Employment}
+%
+% \begin{format}
+% \employer{l}\location{r}\\
+% \title{l}\dates{r}\\
+% \body\\
+% \end{format}
 %
 % \title{Computer Technician}
 % \employer{Hurley Technology Resources}
@@ -159,6 +173,7 @@ Orlowski, and D.\ Schlorff, {\em Updating the Centroid Decomposition
 
 %%===========================================================================%%
 \newpage
+\opening
 
 \section{\bf Submitted Papers}
 
@@ -181,38 +196,33 @@ differential equations. 2002.
 \section{\bf Presentations}
 
 {\em Solving Nonlinear Wave Equations with Mathematica}. Undergraduate
-Research Presentations, N.C. State University, Raleigh,
+Research Presentations, North Carolina State University, Raleigh,
 NC. 23 April 2003.
 
-
 %---------------------------------------------------------------------------
-
-\section{\bf Awards}
-
-\begin{itemize}
-\item Undergraduate Research Award, N.C. State University, 2004
-\end{itemize}
-
-%%---------------------------------------------------------------------------%%
 
 \section{\bf Service}
 
 \begin{itemize}
-\item Vice President, Society of Undergraduate Mathematics, N.C. State
-  University, 2001--2003
+\item Vice President, Economics Graduate Student Council, Duke
+  University, 2006--2007
+\item Vice President, Society of Undergraduate Mathematics, North
+  Carolina State University, 2001--2003
 \end{itemize}
 
 %%---------------------------------------------------------------------------%%
 
-\section{\bf Honors}
+\section{\bf Awards and Honors}
 \begin{itemize}
+\item Outstanding Teaching Assistant, Duke University, 2006
+\item Undergraduate Research Award, North Carolina State University, 2004
 \item \href{http://www.pbk.org/}{Phi Beta Kappa}
 \item \href{http://www.cba.ua.edu/~ode/}
   {Omicron Delta Epsilon} -- Economics Honor Society
 \item \href{http://www.pme-math.org/}
-  {Pi Mu Epsilon} -- Honorary National Mathematics Society
+  {Pi Mu Epsilon} -- Honorary Mathematics Society
 \item \href{http://www.phikappaphi.org/}{Phi Kappa Phi}
-\item \href{http://www.goldenkey.org}{Golden Key International Honour Society}
+\item \href{http://www.goldenkey.org}{Golden Key}
 \end{itemize}
 
 %%---------------------------------------------------------------------------%%
@@ -230,8 +240,8 @@ NC. 23 April 2003.
 \begin{center}
 \vspace{\fill}\ \newline
 {\tiny \rm $ $RCSfile: cv-us.tex,v $ $ }
-{\tiny \rm $ $Date: 2006/03/22 02:15:15 $ $ }
-{\tiny \rm $ $Revision: 1.18 $ $ }
+{\tiny \rm $ $Date: 2006/05/10 13:52:07 $ $ }
+{\tiny \rm $ $Revision: 1.19 $ $ }
 \end{center}
 
 \end{resume}
