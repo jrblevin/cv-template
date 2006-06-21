@@ -13,7 +13,7 @@
 % please leave this notice and the above URL in the source code if you
 % choose to redistribute this file.
 %
-% $Id: cv-us.tex,v 1.22 2006/06/21 00:08:01 jrblevin Exp $
+% $Id: cv-us.tex,v 1.23 2006/06/21 00:14:55 jrblevin Exp $
 %
 %%---------------------------------------------------------------------------
 %
@@ -33,15 +33,24 @@
 %
 %%----------------------------------------------------------------------------
 
-\documentclass[overlapped,line,final,11pt,letterpaper]{res}
+\documentclass[overlapped,line,letterpaper]{res}
 
-\usepackage{hyperref}
+\usepackage{ifpdf}
+
+\ifpdf
+  \usepackage[pdftex]{hyperref}
+\else
+  \usepackage[hypertex]{hyperref}
+\fi
 
 \hypersetup{
-  colorlinks,urlcolor=black,
-  pdftitle={Jason R. Blevins: Curriculum Vitae},
+  letterpaper,
+  colorlinks,
+  urlcolor=black,
+  pdfpagemode=none,
+  pdftitle={Curriculum Vitae},
   pdfauthor={Jason R. Blevins},
-  pdfcreator={\LaTeX\ with package \flqq hyperref\frqq},
+  pdfcreator={$ $Id: cv-us.tex,v 1.23 2006/06/21 00:14:55 jrblevin Exp $ $},
   pdfsubject={Curriculum Vitae},
   pdfkeywords={economics microeconomics econometrics empirical urban
     game theory applied mathematics differential equations TANH method
@@ -223,7 +232,7 @@ NC. 23 April 2003.
 
 \section{\bf Awards and Honors}
 \begin{itemize}
-\item Outstanding Teaching Assistant, Duke University, 2006
+\item Outstanding Teaching Assistant Award, Duke University, 2006
 \item Undergraduate Research Award, North Carolina State University, 2004
 \item \href{http://www.pbk.org/}{Phi Beta Kappa}
 \item \href{http://www.cba.ua.edu/~ode/}
@@ -249,8 +258,8 @@ NC. 23 April 2003.
 \begin{center}
 \vspace{\fill}\ \newline
 {\tiny \rm $ $RCSfile: cv-us.tex,v $ $ }
-{\tiny \rm $ $Date: 2006/06/21 00:08:01 $ $ }
-{\tiny \rm $ $Revision: 1.22 $ $ }
+{\tiny \rm $ $Date: 2006/06/21 00:14:55 $ $ }
+{\tiny \rm $ $Revision: 1.23 $ $ }
 \end{center}
 
 \end{resume}
