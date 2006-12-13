@@ -1,11 +1,11 @@
-## Makefile
+# Makefile
+# $Id: Makefile,v 1.14 2006/12/12 22:55:50 jrblevin Exp $
 #
 # LaTeX Makefile for curriculum vitae template cv-us.tex
 #
-# $Id: Makefile,v 1.13 2005/07/06 22:12:32 jrblevin Exp $
-#
 # Jason Blevins <jrblevin@sdf.lonestar.org>
-#
+# Durham, December 12, 2006
+
 ###############################################################################
 # Configuration Section
 # This should be the only section you need to modify
@@ -18,7 +18,7 @@ BASENAME = cv-us
 SUPPORTS = 
 
 # Other files that will be included in an archive
-OTHER_FILES = #cv-us.html cv-us.txt
+OTHER_FILES =
 
 # Uncomment the next two lines if you wish to use bibtex.  These lines
 # assume the bib file is $(BASENAME).bib.  Modify if needed.
@@ -50,7 +50,7 @@ TEMPLATE_FILES = Makefile $(BASENAME).tex
 WEBSITE_FILES = $(BASENAME).pdf cv-template.tar.gz \
 	$(OTHER_FILES) $(TEMPLATE_FILES)
 
-WEBSITE_PATH = /home/jrblevin/data/computer/web/duke/content/cv/
+WEBSITE_PATH = /home/jrblevin/projects/web/duke/content/cv/
 
 ###############################################################################
 # Build rules
