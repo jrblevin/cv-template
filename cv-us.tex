@@ -1,4 +1,4 @@
-% LaTeX Curriculum Vitae
+% LaTeX Curriculum Vitae Template
 %
 % Copyright (C) 2004-2008 Jason Blevins <jrblevin@sdf.lonestar.org>
 % http://jblevins.org/projects/cv-template/
@@ -8,209 +8,222 @@
 % required in any resulting documents. I do ask that you please leave
 % this notice and the above URL in the source code if you choose to
 % redistribute this file.
-%
-%%---------------------------------------------------------------------------%
-%
-% Notes:
-%
-% * THIS IS IMPORTANT.
-%   Don't forget to change `pdfauthor' and `keywords' in the \hypersetup
-%   section below. Lots of other people's CVs show up in Google when I type my
-%   name because they didn't change these and my name is in their PDF metadata.
-%
-% * To create a new page use: \newpage \opening
-%
-% * res.cls includes an \address{} command which can be used up to twice,
-%   but my address is too long for the format it uses.
-%
-% * Alternate documentclass statement to put headings in margin:
-%   \documentclass[margin,line,11pt,final]{res}
-%
-% * Can divide publication/presentation list into subsections by year:
-%   \section{\bf\small\hspace{8mm}2006}
-%
-%%----------------------------------------------------------------------------%
 
-\documentclass[overlapped,line,letterpaper]{res}
+\documentclass[11pt,letterpaper]{article}
 
-\usepackage[pdftex]{hyperref}
+\usepackage{hyperref}
+\usepackage{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{charter}
+\usepackage{color}
 
 \hypersetup{
-  letterpaper,
   colorlinks,
   urlcolor=black,
-  pdfpagemode=UseNone,
-  pdftitle={Curriculum Vitae},
   pdfauthor={Jason R. Blevins},
-  pdfsubject={Curriculum Vitae},
   pdfkeywords={economics empirical industrial organization econometrics
-    microeconomics applied microeconomics}
+    microeconomics applied microeconomics},
+  pdftitle={Curriculum Vitae},
+  pdfsubject={Curriculum Vitae},
+  pdfpagemode=UseNone
 }
 
-%%===========================================================================%%
+\geometry{textheight=9in, textwidth=6.5in}
 
-\begin{document}
+% Customize section headings
+\usepackage{sectsty}
+\sectionfont{\rmfamily\mdseries\Large}
+\subsectionfont{\rmfamily\bfseries\normalsize}
 
-%---------------------------------------------------------------------------
-% Document Specific Customizations
+% Don't indent paragraphs.
+\setlength\parindent{0em}
+\setlength\parskip{0.5em}
 
-% Make lists without bullets and with no indentation
-\setlength{\leftmargini}{0em}
-\renewcommand{\labelitemi}{}
-\renewcommand{\labelitemii}{}
-
-% Use large bold font for printed name at top of pages
-\renewcommand{\namefont}{\large\textbf}
+% Make lists without bullets
+\renewenvironment{itemize}{
+  \begin{list}{}
+    { \setlength{\itemsep}{5pt}
+      \setlength{\parsep}{0pt}
+      \setlength{\topsep}{0pt}
+      \setlength{\leftmargin}{0em} } }{
+  \end{list}}
 
 % Make a nicer C++
 \def\Cplusplus{C{\raise.5ex\hbox{\footnotesize ++ }}}
 
-%---------------------------------------------------------------------------
 
-\name{Jason R. Blevins}
+\begin{document}
 
-\begin{resume}
+{\huge\bf Jason R. Blevins}
 
-Department of Economics \\
-213 Social Sciences Building \\
+\bigskip
+
+\href{http://www.econ.duke.edu/}{Department of Economics} \\
+\href{http://www.duke.edu/}{Duke University} \\
+325D Social Sciences Building \\
 Box 90097 \\
-Duke University \\
 Durham, NC 27708-0097
 
-Office: 325D Social Sciences \\
-Email: \href{mailto:jrb11@duke.edu}{jrb11@duke.edu} \\
-URL: \href{http://jblevins.org/}{http://jblevins.org/} \\
+\medskip
+
 Phone: (919) 660-8165 \\
 Fax: (919) 684-8974
 
-%---------------------------------------------------------------------------
-\section{\bf Personal}
+\medskip
+
+Email: \href{mailto:jrb11@duke.edu}{jrb11@duke.edu} \\
+URL: \href{http://jblevins.org/}{http://jblevins.org/}
+
+
+\section*{Personal}
 
 \begin{itemize}
-  \item Born: December 15, 1981.
-  \item Married: June 21, 2008, Kelly M. Blevins.
-  \item Citizenship: United States.
+\item Born: December 15, 1981.
+\item Married: June 21, 2008, Kelly M. Blevins.
+\item Citizenship: United States.
 \end{itemize}
 
-%---------------------------------------------------------------------------
-\section{\bf Education}
 
-Ph.D. Economics, Duke University, 2009 (Expected)
-
-M.A. Economics, Duke University, 2006
-
-B.S. Applied Mathematics, NC State University, 2004 \\
-{\it Summa Cum Laude}, Phi Beta Kappa
-
-Budapest Semesters in Mathematics, Fall 2002.
-
-%---------------------------------------------------------------------------
-\section{\bf Research Interests}
-
-Industrial organization and econometrics
-
-%---------------------------------------------------------------------------
-\section{\bf Research Experience}
-
-\begin{format}
-\title{l}\dates{r}\\
-\employer{l}\location{r}\\
-\body\\
-\end{format}
+\section*{Education}
 
 \begin{itemize}
-\item Department of Economics, Duke University
-  \begin{itemize}
-  \item Research Assistant, Peter\ Arcidiacono, Pat\ Bayer, and Paul\
-    Ellickson, Fall 2007--Spring 2009.
-  \item Research Assistant, Han\ Hong, Fall 2006--Spring 2007.
-  \item Research Assistant, Jacob\ Vigdor, Summer 2005--Summer 2006.
-  \end{itemize}
+  \item Ph.D. Economics, Duke University, \textit{expected} 2009.
 
-\item Department of Mathematics, NC State University
-  \begin{itemize}
-  \item Research Assistant, Moody\ Chu and Robert\ Funderlic, Spring
-    2003--Spring 2004.
-  \end{itemize}
+  \item M.A. Economics, Duke University, 2006.
 
-\item Department of Mathematical and Computer Sciences, Colorado School
-    of Mines
-  \begin{itemize}
-  \item Research Assistant, Willy\ Hereman, Summer 2002.
-  \end{itemize}
+  \item B.S. Applied Mathematics, NC State University, 2004,
+    \begin{itemize}
+    \item {\it Summa Cum Laude}, Phi Beta Kappa.
+    \end{itemize}
+
+  \item Budapest Semesters in Mathematics, Budapest University of Technology
+    and Economics, Fall 2002.
 \end{itemize}
 
-%---------------------------------------------------------------------------
-\section{\bf Teaching Experience}
+
+\section*{Research Interests}
+
+Industrial organization and econometrics.
+
+
+\section*{Research Experience}
+
+\subsection*{Department of Economics, Duke University}
 
 \begin{itemize}
-\item Duke University
-  \begin{itemize}
-  \item Teaching Assistant, Ph.D. Econometrics II, Spring 2007.
-  \item Instructor, Ph.D. Microeconomics Qualifier Camp, Summer 2006.
-  \item Teaching Assistant, Ph.D. Game Theory, Spring 2006.
-  \item Teaching Assistant, Ph.D. Microeconomic Analysis, Fall 2005.
-  \end{itemize}
-
-\item NC State University
-  \begin{itemize}
-  \item Mathematics Tutor, Summer 2001.
-  \end{itemize}
+\item Research Assistant,
+  \href{http://www.econ.duke.edu/~psarcidi/}{Peter Arcidiacono},
+  \href{http://www.econ.duke.edu/~pb29/}{Patrick Bayer}, and
+  \href{http://www.econ.duke.edu/~paule/}{Paul Ellickson},
+  Fall 2007--Spring 2009.
+\item Research Assistant,
+  \href{http://www.stanford.edu/~doubleh/}{Han Hong}  
+  Fall 2006--Spring 2007.
+\item Research Assistant,
+  \href{http://trinity.aas.duke.edu/~jvigdor/}{Jacob Vigdor},
+  Summer 2005--Summer 2006.
 \end{itemize}
 
-%------------------------------------------------------------------------------
-\section{\bf Current Projects}
+\subsection*{Department of Mathematics, NC State University}
+
+\begin{itemize}
+\item Research Assistant,
+  \href{http://www4.ncsu.edu/~mtchu/}{Moody Chu} and
+  \href{http://www4.ncsu.edu/~ref/}{Robert Funderlic},
+  Spring 2003--Spring 2004.
+\end{itemize}
+
+\subsection*{Department of Mathematical and Computer Sciences,
+  Colorado School of Mines}
+
+\begin{itemize}
+\item Research Assistant,
+  \href{http://www.mines.edu/fs_home/whereman/}{Willy\ Hereman},
+  Summer 2002.
+\end{itemize}
+
+
+\section*{Teaching Experience}
+
+\subsection*{Duke University}
+
+\begin{itemize}
+\item Teaching Assistant,
+  \href{http://jblevins.org/courses/econ342s07}{Ph.D. Econometrics II},
+  Spring 2007.
+\item Instructor,
+  \href{http://jblevins.org/courses/qualcamp06}{Microeconomics Ph.D. Qualifier Camp},
+  Summer 2006.
+\item Teaching Assistant,
+  \href{http://jblevins.org/courses/econ302s06}{Ph.D. Game Theory},
+  Spring 2006.
+\item Teaching Assistant,
+  \href{http://jblevins.org/courses/econ301f05}{Ph.D. Microeconomic Analysis},
+  Fall 2005.
+\end{itemize}
+
+\subsection*{NC State University}
+
+\begin{itemize}
+\item Mathematics Tutor, Academic Support Program for Student Athletes,
+  Summer 2001.
+\end{itemize}
+
+
+\section*{Current Projects}
 
 \begin{itemize}
 \item ``Learning by doing in DRAM production.''
 \item ``Sequential Monte Carlo Methods for Estimating Dynamic
-  Microeconomic Models''
+  Microeconomic Models.''
 \item ``Estimation of Dynamic Discrete Choice Models in Continuous
-  Time,'' with Peter Arcidiacono, Patrick Bayer, and Paul Ellickson.
+  Time,'' with
+  \href{http://www.econ.duke.edu/~psarcidi/}{Peter Arcidiacono},
+  \href{http://www.econ.duke.edu/~pb29/}{Patrick Bayer}, and
+  \href{http://www.econ.duke.edu/~paule/}{Paul Ellickson}.
 \item ``Distribution Free Estimation of Heteroskedastic Binary Response
-  Models in Stata,'' with Shakeeb Khan.
-\item ``Structural Estimation of Sequential Games of Complete Information.''
+  Models in Stata,'' with
+  \href{http://www.econ.duke.edu/~shakeebk/}{Shakeeb Khan}.
+\item ``Structural Estimation of Sequential Games of Complete
+  Information.''
 \end{itemize}
 
-%------------------------------------------------------------------------------
-\section{\bf Unpublished Papers}
 
-\begin{itemize}
-\item ``Updating the Centroid Decomposition with Applications in LSI,''
-  with M.\ T.\ Chu, D.\ Ca\~{n}as, R.\ E.\ Funderlic, N.\ Orlowski, and
-  D.\ Schlorff (2004).
-\item ``The Effects of Ties on Convergence in K-Modes Variants for
-  Clustering Categorical Data,'' with N.\ Orlowski, D.\ Schlorff, D.\
-  Ca\~{n}as, M.\ T.\ Chu, and R.\ E.\ Funderlic (2004).
-\end{itemize}
+\section*{Unpublished Papers}
 
-%------------------------------------------------------------------------------
-\section{\bf Scientific Software}
+``Updating the Centroid Decomposition with Applications in LSI,''
+with M.\ T.\ Chu, D.\ Ca\~{n}as, R.\ E.\ Funderlic, N.\ Orlowski, and
+D.\ Schlorff (2004).
 
-\begin{itemize}
-\item Blevins, J., J. Heath, and W. Hereman (2002):
-  \href{http://www.mines.edu/fs_home/whereman/software/PDESolutionTester/}
-  {\texttt{PDESolutionTester}}, A Mathematica program for the symbolic
-  verification of exact solutions of nonlinear partial differential
-  equations.
-\end{itemize}
+``The Effects of Ties on Convergence in K-Modes Variants for
+Clustering Categorical Data,'' with N.\ Orlowski, D.\ Schlorff, D.\
+Ca\~{n}as, M.\ T.\ Chu, and R.\ E.\ Funderlic (2004).
 
-%------------------------------------------------------------------------------
-\section{\bf Professional Activities}
+
+\section*{Scientific Software}
+
+\href{http://jblevins.org/research/pdest}{PDESolutionTester}, A
+Mathematica program for the symbolic verification of exact solutions of
+nonlinear partial differential equations, with
+\href{http://web.centre.edu/jeffrey.heath/}{Jeff\ Heath} and
+\href{http://www.mines.edu/fs_home/whereman/}{Willy\ Hereman} (2002).
+
+
+\section*{Professional Activities}
 
 \begin{itemize}
 \item Member of the
   \href{http://www.econometricsociety.org/}{Econometric Society},
   2006--Present.
-\item Vice President, Economics Graduate Student Council,
-  Duke University, 2006--2007
-\item Vice President, Society of Undergraduate Mathematics,
-  North Carolina State University, 2001--2003
+\item Vice President, Economics Graduate Student Council, Duke University,
+  2006--2007.
+\item Vice President, Society of Undergraduate Mathematics, North
+  Carolina State University, 2001--2003.
 \item Referee for {\em Economic Inquiry}.
 \end{itemize}
 
-%%---------------------------------------------------------------------------%%
-\section{\bf Honors and Awards}
+
+\section*{Honors and Awards}
 
 \begin{itemize}
 \item Summer Research Fellowship, Duke University, 2008.
@@ -218,42 +231,36 @@ Industrial organization and econometrics
 \item Institute on Computational Economics Fellow, University of Chicago, 2006.
 \item Outstanding Teaching Assistant Award, Duke University, 2006.
 \item Undergraduate Research Award, North Carolina State University, 2004.
-\item \href{http://www.cba.ua.edu/~ode/}{Omicron Delta Epsilon}, 2004.
+% \item \href{http://www.cba.ua.edu/~ode/}{Omicron Delta Epsilon}, 2004.
 \item \href{http://www.pbk.org/}{Phi Beta Kappa}, Zeta of North Carolina, 2003.
-\item \href{http://www.pme-math.org/}{Pi Mu Epsilon}, 2003.
+% \item \href{http://www.pme-math.org/}{Pi Mu Epsilon}, 2003.
 \item NSF \href{http://www.nsf.gov/crssprgm/reu/}{REU} Award,
   Colorado School of Mines, 2002.
-\item \href{http://www.phikappaphi.org/}{Phi Kappa Phi}, 2002.
-\item \href{http://www.goldenkey.org}{Golden Key International
-    Honour Society}, 2002.
-\item Dean's List, 2000--2004.
+% \item \href{http://www.phikappaphi.org/}{Phi Kappa Phi}, 2002.
+% \item \href{http://www.goldenkey.org}{Golden Key International
+%     Honour Society}, 2002.
+% \item Dean's List, 2000--2004.
 \end{itemize}
 
-%%---------------------------------------------------------------------------%%
-\section{\bf Computer Skills}
+\section*{Computer Skills}
 
 \begin{itemize}
 \item Programming languages: C, \Cplusplus, Fortran, Perl, Ruby, Python,
-  Emacs Lisp
-\item Operating systems: Linux, Windows
-\item Mathematics: Octave, Matlab, Mathematica
-\item Statistics: R, Stata, SAS
-\item Database: SQL
-\item Other: Emacs, \TeX, \LaTeX
+  Emacs Lisp.
+\item Operating systems: Linux, Windows.
+\item Mathematics: Octave, Matlab, Mathematica.
+\item Statistics: R, Stata, SAS.
+\item Database: SQL.
+\item Other: Emacs, \TeX, \LaTeX.
 \end{itemize}
 
-%%---------------------------------------------------------------------------%%
-
 \bigskip
+
+% Footer
 \begin{center}
 \begin{footnotesize}
 Last updated: \today \\
 \href{http://jblevins.org/cv}{http://jblevins.org/cv}
 \end{footnotesize}
 \end{center}
-
-\end{resume}
-
 \end{document}
-
-%%===========================================================================%%
