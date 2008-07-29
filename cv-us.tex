@@ -1,7 +1,7 @@
 % LaTeX Curriculum Vitae Template
 %
 % Copyright (C) 2004-2008 Jason Blevins <jrblevin@sdf.lonestar.org>
-% http://jblevins.org/projects/cv-template/
+% http://jblevins.org/projects/cv-template
 %
 % You may use use this document as a template to create your own CV
 % and you may redistribute the source code freely. No attribution is
@@ -13,13 +13,20 @@
 
 \usepackage{hyperref}
 \usepackage{geometry}
-\usepackage[T1]{fontenc}
-\usepackage{charter}
 \usepackage{color}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[osf]{mathpazo}
+
+\definecolor{darkblue}{rgb}{0.0,0.0,0.39}
 
 \hypersetup{
   colorlinks,
-  urlcolor=black,
+  linkcolor = darkblue,
+  pagecolor = darkblue,
+  urlcolor = darkblue,
+  anchorcolor = darkblue,
+  citecolor = darkblue,
   pdfauthor={Jason R. Blevins},
   pdfkeywords={economics empirical industrial organization econometrics
     microeconomics applied microeconomics},
@@ -33,7 +40,8 @@
 % Customize section headings
 \usepackage{sectsty}
 \sectionfont{\rmfamily\mdseries\Large}
-\subsectionfont{\rmfamily\bfseries\normalsize}
+\subsectionfont{\rmfamily\mdseries\scshape\normalsize}
+\subsubsectionfont{\rmfamily\bfseries\upshape\normalsize}
 
 % Don't indent paragraphs.
 \setlength\parindent{0em}
@@ -51,15 +59,14 @@
 % Make a nicer C++
 \def\Cplusplus{C{\raise.5ex\hbox{\footnotesize ++ }}}
 
-
 \begin{document}
 
 {\huge\bf Jason R. Blevins}
 
 \bigskip
 
-\href{http://www.econ.duke.edu/}{Department of Economics} \\
 \href{http://www.duke.edu/}{Duke University} \\
+\href{http://www.econ.duke.edu/}{Department of Economics} \\
 325D Social Sciences Building \\
 Box 90097 \\
 Durham, NC 27708-0097
@@ -71,16 +78,16 @@ Fax: (919) 684-8974
 
 \medskip
 
-Email: \href{mailto:jrb11@duke.edu}{jrb11@duke.edu} \\
-URL: \href{http://jblevins.org/}{http://jblevins.org/}
+Email: \href{mailto:jrb11@duke.edu}{\tt jrb11@duke.edu} \\
+URL: \href{http://jblevins.org/}{\tt http://jblevins.org/}
 
 
 \section*{Personal}
 
 \begin{itemize}
-\item Born: December 15, 1981.
-\item Married: June 21, 2008, Kelly M. Blevins.
-\item Citizenship: United States.
+\item Born on December 15, 1981.
+\item Married to Kelly M. Blevins.
+\item United States Citizen.
 \end{itemize}
 
 
@@ -223,7 +230,7 @@ nonlinear partial differential equations, with
 \end{itemize}
 
 
-\section*{Honors and Awards}
+\section*{Honors \& Awards}
 
 \begin{itemize}
 \item Summer Research Fellowship, Duke University, 2008.
@@ -260,7 +267,7 @@ nonlinear partial differential equations, with
 \begin{center}
 \begin{footnotesize}
 Last updated: \today \\
-\href{http://jblevins.org/cv}{http://jblevins.org/cv}
+\href{http://jblevins.org/cv}{\tt http://jblevins.org/cv}
 \end{footnotesize}
 \end{center}
 \end{document}
