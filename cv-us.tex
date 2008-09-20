@@ -20,18 +20,27 @@
 % \usepackage[T1]{fontenc}
 % \usepackage[osf]{mathpazo}
 
+% Set your name here
+\def\name{Jason R. Blevins}
+
+% The following metadata will show up in the PDF properties
 \hypersetup{
   colorlinks = true,
   urlcolor = black,
-  pdfauthor = {Jason R. Blevins},
+  pdfauthor = {\name},
   pdfkeywords = {economics empirical industrial organization econometrics
     microeconomics applied microeconomics},
-  pdftitle = {Jason R. Blevins: Curriculum Vitae},
+  pdftitle = {\name: Curriculum Vitae},
   pdfsubject = {Curriculum Vitae},
   pdfpagemode = UseNone
 }
 
-\geometry{textheight=9in, textwidth=6.5in}
+\geometry{textheight=8.5in, textwidth=6in}
+
+% Customize page headers
+\pagestyle{myheadings}
+\markright{\name}
+\thispagestyle{empty}
 
 % Customize section headings
 \usepackage{sectsty}
@@ -51,7 +60,7 @@
 
 \begin{document}
 
-\centerline{\huge\bf Jason R. Blevins}
+\centerline{\huge\bf \name}
 
 \vspace{0.25in}
 
