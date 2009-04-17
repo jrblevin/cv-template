@@ -23,6 +23,10 @@
 % Set your name here
 \def\name{Harold Hotelling}
 
+% Replace this with a link to your CV if you like, or set it empty
+% (as in \def\footerlink{}) to remove the link in the footer:
+\def\footerlink{http://jblevins.org/projects/cv-template}
+
 % The following metadata will show up in the PDF properties
 \hypersetup{
   colorlinks = true,
@@ -149,10 +153,10 @@
 
 % Footer
 \begin{center}
-\begin{footnotesize}
-Last updated: \today \\
-\href{http://jblevins.org/projects/cv-template}%
-{\tt http://jblevins.org/projects/cv-template}
-\end{footnotesize}
+  \begin{footnotesize}
+    Last updated: \today \\
+    \href{\footerlink}{\texttt{\footerlink}}
+  \end{footnotesize}
 \end{center}
+
 \end{document}
